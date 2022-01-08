@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Toast_message_Demo">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Simple"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle"
+        android:textColor="#FFFF"
+        android:onClick="simple_toast_message"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Gravity"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle"
+        android:textColor="#FFFF"
+        android:onClick="gravity_toast_message"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Custom"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle"
+        android:textColor="#FFFF"
+        android:onClick="custom_toast_message"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

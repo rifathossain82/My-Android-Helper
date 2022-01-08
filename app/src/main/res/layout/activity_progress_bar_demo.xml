@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".progress_bar.Progress_bar_demo">
+
+    <ProgressBar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_id_demo1"
+        />
+    <ProgressBar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_id_demo2"
+        android:progress="50"
+        android:secondaryProgressTint="#FF9800"
+        android:progressTint="@color/teal_200"
+        />
+    <ProgressBar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_id_demo3"
+        android:progress="50"
+        android:secondaryProgressTint="#FF9800"
+        android:progressTint="@color/teal_200"
+        android:indeterminate="true"
+        />
+    <ProgressBar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_id_demo4"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bg1"
+        android:indeterminateDuration="5000"
+        />
+
+    <ProgressBar
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_id_demo5"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bg2"
+
+        />
+
+</LinearLayout>

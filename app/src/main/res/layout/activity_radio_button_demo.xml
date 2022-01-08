@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RadioButton_demo">
+
+    <!--This is default radio button-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your department"
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textColor="#009688"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group_id">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer"
+            android:id="@+id/radio_button_id1"
+            android:onClick="button_click"
+            android:checked="true"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrical"
+            android:id="@+id/radio_button_id2"
+            android:onClick="button_click"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Civil"
+            android:id="@+id/radio_button_id3"
+            android:onClick="button_click"
+            />
+    </RadioGroup>
+
+
+    <!--This is simple edit radio button-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your semester"
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group_id2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st"
+            android:id="@+id/radio_button_id4"
+            android:onClick="button_click2"
+            android:checked="true"
+            android:buttonTint="#2196F3"
+            android:textColor="#2196F3"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd"
+            android:id="@+id/radio_button_id5"
+            android:onClick="button_click2"
+            android:buttonTint="#2196F3"
+            android:textColor="#2196F3"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd"
+            android:id="@+id/radio_button_id6"
+            android:onClick="button_click2"
+            android:buttonTint="#2196F3"
+            android:textColor="#2196F3"
+            />
+    </RadioGroup>
+
+
+    <!--This is custom radio button-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your Shift"
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group_id3"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            android:id="@+id/radio_button_id7"
+            android:onClick="button_click3"
+            android:padding="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text"
+            />
+        <RadioButton
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:id="@+id/radio_button_id8"
+            android:onClick="button_click3"
+            android:padding="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text"
+            />
+        <RadioButton
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night"
+            android:id="@+id/radio_button_id9"
+            android:onClick="button_click3"
+            android:padding="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/radio_text"
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:onClick="ok_method"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

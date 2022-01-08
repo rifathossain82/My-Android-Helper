@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditText_Demo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:hint="Enter your name"
+        android:id="@+id/eidt1_demo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter your age"
+        android:id="@+id/eidt2_demo"
+        android:textColorHint="#75FFC107"
+        android:inputType="number"
+        android:backgroundTint="#FFC107"
+        android:textColor="#FFC107"
+        android:textCursorDrawable="@drawable/color_coursor_edit_text2"
+        />
+
+    <!--here I use color cursor-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter your age"
+        android:id="@+id/eidt3_demo"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:background="@drawable/edittext_bg1"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/color_coursor_edit_text"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:errorTextColor="#FF0000"
+        android:hint="Department"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_groupwork"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperText="use number, character or hyphen"
+        app:helperTextTextColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="#03A9F4"
+            android:maxLength="21"
+            android:id="@+id/edit4_demo"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:errorTextColor="#FF0000"
+        android:hint="Password"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="#03A9F4"
+            android:maxLength="21"
+            android:inputType="textPassword"
+            android:id="@+id/edit5_demo"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--here I use custom icon on end and create a custom method for this-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:errorTextColor="#FF0000"
+        android:hint="Email"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_checked"
+        app:startIconDrawable="@drawable/ic_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="#03A9F4"
+            android:maxLength="51"
+            android:inputType="text"
+            android:id="@+id/edit6_demo"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--here I use prefix text-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:errorTextColor="#FF0000"
+        android:hint="Number"
+        app:prefixText="+880"
+        app:prefixTextColor="@color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_checked"
+        app:startIconDrawable="@drawable/ic_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="#03A9F4"
+            android:maxLength="10"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:id="@+id/edit7_demo"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--here I use suffix text-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:errorTextColor="#FF0000"
+            app:errorEnabled="true"
+            android:hint="Email"
+            app:suffixText=" @gmail.com"
+            app:suffixTextColor="@color/black"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_checked"
+            app:startIconDrawable="@drawable/ic_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:backgroundTint="#03A9F4"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:id="@+id/edit8_demo"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>

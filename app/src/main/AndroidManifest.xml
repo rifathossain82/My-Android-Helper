@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.admob.myhelperandroid" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dish"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dish"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyHelperAndroid" >
+        <activity android:name=".EditText_Demo" />
+        <activity android:name=".ChipNavigationBar_demo" />
+        <activity android:name=".RadioButton_demo" />
+        <activity android:name=".progress_bar.Progress_bar_demo" />
+        <activity android:name=".progress_bar.SpinKit_ProgressBar_demo" />
+        <activity android:name=".progress_bar.Custom_progressbar_dialog" />
+        <activity android:name=".Checkbox_Demo" />
+        <activity android:name=".Toast_message_Demo" />
+        <activity android:name=".Button_demo" />
+        <activity android:name=".pass_data.fragment_to_activity.Activity_demo" />
+        <activity android:name=".pass_data.activity_to_fragment.MyDemo_activity" />
+        <activity android:name=".pass_data.Pass_DataByFragment" />
+        <activity android:name=".pass_data.fragment_to_activity.Receiver_Activity" />
+        <activity android:name=".pass_data.sender_activity" />
+        <activity android:name=".pass_data.receiver_activity" />
+        <activity android:name=".alert_dialog.Full_screen_alert_dialog" />
+        <activity android:name=".Textview_Demo" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Webview_loading_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

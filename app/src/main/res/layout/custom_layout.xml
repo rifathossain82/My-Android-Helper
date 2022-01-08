@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_layout_bg"
+    android:id="@+id/toast_layout"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/emoji_custom_toast_id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_imoji"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!!!"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/text_custom_toast_id"/>
+
+</LinearLayout>
